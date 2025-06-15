@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>JWS Control 1.0</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui-1.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Basic-icons.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body onload="mintadata()">
+    <div class="box2">
+        <div class="textbox">
+            <h1>Tartil</h1>
+            <form style="padding-right: 20px;padding-left: 20px;">
+                <!-- <input class="form-control" type="hidden" id="server_tartil" value="http://192.168.4.1/"> -->
+                <div class="row">
+                    <div class="col"><label class="form-label">Imsak</label><select class="form-select" id="sel_tar_imsak" style="text-align: center;font-size: 20px;">
+                            <option value="00|00:00" selected="">Matikan</option>
+                            <option value="24|08:14">Tahrim</option>
+                            <option value="28|06:42">Asyghil</option>
+                            <option value="29|06:27">Tibbil Qulub</option>
+                            <option value="30|05:37">Busyro</option>
+                        </select></div>
+                    <div class="col"><label class="form-label">Subuh</label><select class="form-select" id="sel_tar_subuh" style="text-align: center;font-size: 20px;">
+                            <option value="00|00:00" selected="">Matikan</option>
+                            <option value="24|08:14">Tahrim</option>
+                            <option value="28|06:42">Asyghil</option>
+                            <option value="29|06:27">Tibbil Qulub</option>
+                            <option value="30|05:37">Busyro</option>
+                        </select></div>
+                </div>
+                <div class="row">
+                    <div class="col"><label class="form-label">Dzuhur</label><select class="form-select" id="sel_tar_dzuhur" style="text-align: center;font-size: 20px;">
+                            <option value="00|00:00" selected="">Matikan</option>
+                            <option value="24|08:14">Tahrim</option>
+                            <option value="28|06:42">Asyghil</option>
+                            <option value="29|06:27">Tibbil Qulub</option>
+                            <option value="30|05:37">Busyro</option>
+                            <option value="21|22:14">Al Qadr</option>
+                            <option value="22|18:48">Ar Rahman</option>
+                            <option value="23|15:07">Al Mulk</option>
+                            <option value="25|18:51">Al Waqiah</option>
+                            <option value="26|26:50">Yasin</option>
+                            <option value="27|14:36">Al Hujurat</option>
+                        </select></div>
+                    <div class="col"><label class="form-label">Ashar</label><select class="form-select" id="sel_tar_ashar" style="text-align: center;font-size: 20px;">
+                            <option value="00|00:00" selected="">Matikan</option>
+                            <option value="24|08:14">Tahrim</option>
+                            <option value="28|06:42">Asyghil</option>
+                            <option value="29|06:27">Tibbil Qulub</option>
+                            <option value="30|05:37">Busyro</option>
+                            <option value="21|22:14">Al Qadr</option>
+                            <option value="22|18:48">Ar Rahman</option>
+                            <option value="23|15:07">Al Mulk</option>
+                            <option value="25|18:51">Al Waqiah</option>
+                            <option value="26|26:50">Yasin</option>
+                            <option value="27|14:36">Al Hujurat</option>
+                        </select></div>
+                </div>
+                <div class="row">
+                    <div class="col"><label class="form-label">Maghrib</label><select class="form-select" id="sel_tar_maghrib" style="text-align: center;font-size: 20px;">
+                            <option value="00|00:00" selected="">Matikan</option>
+                            <option value="24|08:14">Tahrim</option>
+                            <option value="28|06:42">Asyghil</option>
+                            <option value="29|06:27">Tibbil Qulub</option>
+                            <option value="30|05:37">Busyro</option>
+                            <option value="21|22:14">Al Qadr</option>
+                            <option value="22|18:48">Ar Rahman</option>
+                            <option value="23|15:07">Al Mulk</option>
+                            <option value="25|18:51">Al Waqiah</option>
+                            <option value="26|26:50">Yasin</option>
+                            <option value="27|14:36">Al Hujurat</option>
+                        </select></div>
+                    <div class="col"><label class="form-label">Isya</label><select class="form-select" id="sel_tar_isya" style="text-align: center;font-size: 20px;">
+                            <option value="00|00:00" selected="">Matikan</option>
+                            <option value="24|08:14">Tahrim</option>
+                            <option value="28|06:42">Asyghil</option>
+                            <option value="29|06:27">Tibbil Qulub</option>
+                            <option value="30|05:37">Busyro</option>
+                            <option value="21|22:14">Al Qadr</option>
+                            <option value="22|18:48">Ar Rahman</option>
+                            <option value="23|15:07">Al Mulk</option>
+                            <option value="25|18:51">Al Waqiah</option>
+                            <option value="26|26:50">Yasin</option>
+                            <option value="27|14:36">Al Hujurat</option>
+                        </select></div>
+                </div>
+                <div class="row">
+                    <div class="col"><label class="form-label">Jum'at</label><select class="form-select" id="sel_tar_jumat" style="text-align: center;font-size: 20px;">
+                            <option value="00|00:00" selected="">Matikan</option>
+                            <option value="24|08:14">Tahrim</option>
+                            <option value="28|06:42">Asyghil</option>
+                            <option value="29|06:27">Tibbil Qulub</option>
+                            <option value="30|05:37">Busyro</option>
+                            <option value="21|22:14">Al Qadr</option>
+                            <option value="22|18:48">Ar Rahman</option>
+                            <option value="23|15:07">Al Mulk</option>
+                            <option value="25|18:51">Al Waqiah</option>
+                            <option value="26|26:50">Yasin</option>
+                            <option value="27|14:36">Al Hujurat</option>
+                        </select></div>
+                    <div class="col"></div>
+                </div>
+            </form><button class="btn btn-primary" id="btn_simpan_tartil" type="button" style="margin-top: 14px;width: 90%;">Kirim</button><button class="btn btn-danger" id="btn_back" type="button" style="width: 90%;margin-top: 18px;">Back</button>
+        </div>
+    </div>
+    <script src="cordova.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/tartil.js"></script>
+</body>
+
+</html>

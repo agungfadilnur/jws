@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>JWS COntrol 1.0</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui-1.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Basic-icons.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body onload="mintadata()">
+    <div class="box2">
+        <div class="textbox">
+            <h1>Informasi</h1>
+            <form style="padding-right: 20px;padding-left: 20px;">
+                <!-- <input class="form-control" type="hidden" id="server_informasi" value="http://192.168.4.1/"> -->
+                <label class="form-label">Nama Masjid</label>
+                <input class="form-control" type="text" id="txt_namamasjid" style="font-size: 20px;text-align: center;" placeholder="Masukkan Nama Masjid">
+                <label class="form-label">Informasi 1</label>
+                <input class="form-control" type="text" id="txt_info1" style="font-size: 20px;text-align: center;" placeholder="Masukkan Informasi 1">
+                <label class="form-label">Informasi 2</label>
+                <input class="form-control" type="text" id="txt_info2" style="font-size: 20px;text-align: center;" placeholder="Masukkan Informasi 2">
+                <label class="form-label">Informasi 3</label>
+                <input class="form-control" type="text" id="txt_info3" style="font-size: 20px;text-align: center;" placeholder="Masukkan Informasi 3">
+                <label class="form-label">Setelah Iqomah</label>
+                <input class="form-control" type="text" id="txt_stlhiqomah" style="font-size: 20px;text-align: center;" placeholder="Masukkan Pesan Iqomah">
+            </form>
+                <button class="btn btn-primary" id="btn_simpan_informasi" type="button" style="margin-top: 14px;width: 90%;">Kirim</button>
+                <button class="btn btn-danger" id="btn_back_info" type="button" style="width: 90%;margin-top: 18px;">Back</button>
+        </div>
+    </div>
+    <script src="cordova.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/informasi.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>JWS Control 1.0</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui-1.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Basic-icons.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body onload="mintadata()">
+    <div class="box2">
+        <div class="textbox">
+            <h1 style="margin-bottom: 42px;">Tampil Jadwal</h1>
+            <form style="padding-right: 20px;padding-left: 20px;">
+                <!-- <input class="form-control" type="hidden" id="server_tpljadwal" value="http://192.168.4.1/"> -->
+                <div class="row">
+                    <div class="col" style="border-radius: 14px;border: 2px none rgb(205,205,205);">
+                        <input type="checkbox" id="tpl_imsak" class="btn-check" autocomplete="off">
+                        <label class="form-label btn btn-outline-primary" for="tpl_imsak" style="width: 80%;">Imsak</label>
+                    </div>
+                    <div class="col align-self-center" style="border-radius: 14px;border: 2px none rgb(205,205,205);">
+                        <input type="checkbox" id="tpl_subuh" class="btn-check" autocomplete="off">
+                        <label class="form-label btn btn-outline-primary" for="tpl_subuh" style="width: 80%;">Subuh</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col" style="border-radius: 14px;border: 2px none rgb(205,205,205);">
+                        <input type="checkbox" id="tpl_terbit" class="btn-check" autocomplete="off">
+                        <label class="form-label btn btn-outline-primary" for="tpl_terbit" style="width: 80%;">Terbit</label>
+                    </div>
+                    <div class="col align-self-center" style="border-radius: 14px;border: 2px none rgb(205,205,205);">
+                        <input type="checkbox" id="tpl_dhuha" class="btn-check" autocomplete="off">
+                        <label class="form-label btn btn-outline-primary" for="tpl_dhuha" style="width: 80%;">Dhuha</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col" style="border-radius: 14px;border: 2px none rgb(205,205,205);">
+                        <input type="checkbox" id="tpl_dzuhur" class="btn-check" autocomplete="off">
+                        <label class="form-label btn btn-outline-primary" for="tpl_dzuhur" style="width: 80%;">Dzuhur</label>
+                    </div>
+                    <div class="col align-self-center" style="border-radius: 14px;border: 2px none rgb(205,205,205);">
+                        <input type="checkbox" id="tpl_ashar" class="btn-check" autocomplete="off">
+                        <label class="form-label btn btn-outline-primary" for="tpl_ashar" style="width: 80%;">Ashar</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col" style="border-radius: 14px;border: 2px none rgb(205,205,205);">
+                        <input type="checkbox" id="tpl_maghrib" class="btn-check" autocomplete="off">
+                        <label class="form-label btn btn-outline-primary" for="tpl_maghrib" style="width: 80%;">Maghrib</label>
+                    </div>
+                    <div class="col align-self-center" style="border-radius: 14px;border: 2px none rgb(205,205,205);">
+                        <input type="checkbox" id="tpl_isya" class="btn-check" autocomplete="off">
+                        <label class="form-label btn btn-outline-primary" for="tpl_isya" style="width: 80%;">Isya</label>
+                    </div>
+                </div>
+            </form>
+            <button class="btn btn-primary" id="btn_simpan_tpl_jadwal" type="button" style="margin-top: 33px;width: 90%;">Kirim</button>
+            <button class="btn btn-danger" id="btn_back" type="button" style="width: 90%;margin-top: 18px;">Back</button>
+        </div>
+    </div>
+    <script src="cordova.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/tampiljadwal.js"></script>
+</body>
+
+</html>

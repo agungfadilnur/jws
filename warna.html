@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>JWS Control 1.0</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui-1.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Basic-icons.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body onload="mintadata()">
+    <div class="box2">
+        <div class="textbox">
+            <h1 style="margin-bottom: 23px;">Warna</h1>
+            <form style="padding-right: 20px;padding-left: 20px;">
+                <!-- <input class="form-control" type="hidden" id="server_warna" value="http://192.168.4.1/"> -->
+                <div class="table-responsive">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td class="text-start" style="border-style: none;width: 85%;vertical-align: middle;">Jam</td>
+                                <td class="text-end" style="border-style: none;vertical-align: middle;">
+                                    <input class="form-control form-control-color" id="btn_jam" type="color" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-start" style="border-style: none;width: 85%;vertical-align: middle;">Waktu Sholat</td>
+                                <td class="text-end" style="border-style: none;vertical-align: middle;">
+                                    <input class="form-control form-control-color" id="btn_wktslt" type="color" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-start" style="border-style: none;width: 85%;vertical-align: middle;">Info</td>
+                                <td class="text-end" style="border-style: none;vertical-align: middle;">
+                                    <input class="form-control form-control-color" id="btn_info" type="color" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-start" style="border-style: none;width: 85%;vertical-align: middle;">Jam Adzan</td>
+                                <td class="text-end" style="border-style: none;vertical-align: middle;">
+                                    <input class="form-control form-control-color" id="btn_jamadzan" type="color" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-start" style="border-style: none;width: 85%;vertical-align: middle;">Adzan</td>
+                                <td class="text-end" style="border-style: none;vertical-align: middle;">
+                                    <input class="form-control form-control-color" id="btn_adzan" type="color" />
+                                </td>
+                            </tr>
+                             <tr>
+                                <td class="text-start" style="border-style: none;width: 85%;vertical-align: middle;">Setelah Iqomah</td>
+                                <td class="text-end" style="border-style: none;vertical-align: middle;">
+                                    <input class="form-control form-control-color" id="btn_stliqo" type="color" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-start" style="border-style: none;width: 85%;vertical-align: middle;">Tulisan Iqomah</td>
+                                <td class="text-end" style="border-style: none;vertical-align: middle;">
+                                    <input class="form-control form-control-color" id="btn_tuliqo" type="color" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-start" style="border-style: none;width: 85%;vertical-align: middle;">Countdown Iqomah</td>
+                                <td class="text-end" style="border-style: none;vertical-align: middle;">
+                                    <input class="form-control form-control-color" id="btn_cdiqo" type="color" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </form><button class="btn btn-primary" id="btn_simpan_warna" type="button" style="margin-top: 14px;width: 90%;">Kirim</button><button class="btn btn-danger" id="btn_back" type="button" style="width: 90%;margin-top: 18px;">Back</button>
+        </div>
+    </div>
+    <script src="cordova.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/warna.js"></script>
+</body>
+
+</html>

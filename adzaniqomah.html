@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>JWS Control 1.0</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui-1.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Basic-icons.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body onload="mintadata()">
+    <div class="box2">
+        <div class="textbox">
+            <h1>Adzan &amp; Iqomah</h1>
+            <p style="margin-top: -11px;">(menit)</p>
+            <form style="padding-right: 20px;padding-left: 20px;">
+                <!-- <input class="form-control" type="hidden" id="server_adzan" value="http://192.168.4.1/"> -->
+                <div class="row">
+                    <div class="col"><label class="form-label">Adzan</label><select class="form-select" id="sel_adz_adzan" style="text-align: center;font-size: 20px;">
+                            <option value="1" selected="">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select></div>
+                    <div class="col"><label class="form-label">Subuh</label><select class="form-select" id="sel_adz_subuh" style="text-align: center;font-size: 20px;">
+                            <option value="1" selected="">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select></div>
+                </div>
+                <div class="row">
+                    <div class="col"><label class="form-label">Dzuhur</label><select class="form-select" id="sel_adz_dzuhur" style="text-align: center;font-size: 20px;">
+                            <option value="1" selected="">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select></div>
+                    <div class="col"><label class="form-label">Ashar</label><select class="form-select" id="sel_adz_ashar" style="text-align: center;font-size: 20px;">
+                            <option value="1" selected="">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select></div>
+                </div>
+                <div class="row">
+                    <div class="col"><label class="form-label">Maghrib</label><select class="form-select" id="sel_adz_maghrib" style="text-align: center;font-size: 20px;">
+                            <option value="1" selected="">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select></div>
+                    <div class="col"><label class="form-label">Isya</label><select class="form-select" id="sel_adz_isya" style="text-align: center;font-size: 20px;">
+                            <option value="1" selected="">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select></div>
+                </div>
+            </form><button class="btn btn-primary" id="btn_simpan_adzan" type="button" style="margin-top: 14px;width: 90%;">Kirim</button><button class="btn btn-danger" id="btn_back" type="button" style="width: 90%;margin-top: 18px;">Back</button>
+        </div>
+    </div>
+    <script src="cordova.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/adzaniqomah.js"></script>
+</body>
+
+</html>
